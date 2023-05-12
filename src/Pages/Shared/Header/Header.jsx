@@ -6,17 +6,20 @@ import { Button, Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
 
 const Header = () => {
   return (
-    <Container>
+    <Container className="mt-4">
       <div className="text-center">
         <img src={logo} alt="" />
-        <p className="text-secondary">Journalism Without Fear or Favour</p>
+        <p className="text-secondary">
+          <small>Journalism Without Fear or Favour</small>{" "}
+        </p>
         <p>{moment().format("dddd, MMMM D, YYYY")}</p>
       </div>
-      <div className="d-flex">
+      <div className="d-flex gap-2">
         <Button variant="danger">Latest</Button>
         <Marquee className="text-danger" speed={100}>
           I can be a React component, multiple React components, or just some
-          text.
+          text............I can be a React component, multiple React components,
+          or just some text
         </Marquee>
       </div>
       <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
@@ -28,8 +31,10 @@ const Header = () => {
               <Nav.Link href="#pricing">About</Nav.Link>
               <Nav.Link href="#pricing">Career</Nav.Link>
             </Nav>
-            <Nav>
-              <Nav.Link href="#deets">Profile</Nav.Link>
+            <Nav className="align-center">
+              <Nav.Link className="mt-2" href="#deets">
+                Profile
+              </Nav.Link>
               <Nav.Link eventKey={2} href="#memes">
                 <Button variant="secondary">Login</Button>
               </Nav.Link>

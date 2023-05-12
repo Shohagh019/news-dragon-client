@@ -14,15 +14,15 @@ const RightNav = () => {
   return (
     <div>
       <h4>Login With</h4>
-      <Button variant="outline-primary">
+      <Button className="w-100 mb-2" variant="outline-primary">
         <FaGoogle />
         Login with Google
       </Button>
-      <Button variant="outline-secondary">
+      <Button className="w-100 mb-2" variant="outline-secondary">
         <FaGithub />
         Login with Github
       </Button>
-      <div>
+      <div className="mt-4">
         <h4>Find us on</h4>
         <ListGroup>
           <ListGroup.Item>
@@ -43,7 +43,7 @@ const RightNav = () => {
         <QZone></QZone>
       </div>
       <div>
-        <img src={bg} alt="" />
+        <img className="w-100" src={bg} alt="" />
       </div>
     </div>
   );
